@@ -1,0 +1,17 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/app",
+    // changed to commonjs
+    "module": "commonjs",
+    "types": []
+  },
+  "exclude": [
+    "src/test.ts",
+    "**/*.spec.ts"
+  ],
+  // giving Reference to appSSRModule
+  "angularCompilerOptions": {
+    "entryModule": "app/app-ssr.module#AppSSRModule"
+  }
+}
